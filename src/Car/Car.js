@@ -8,6 +8,8 @@ export default (props) => (
       marginBottom: "10px",
       display: "block",
       padding: "10px",
+      boxShadow: "0 4px 5px 0px rgba(0,0,0, 14)",
+      borderRadius: "5px",
     }}>
     <h3>Car name: {props.name}</h3>
     <p>
