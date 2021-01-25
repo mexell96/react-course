@@ -1,24 +1,19 @@
+/* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 
-// function car() {
-//   return <h2>This is car component</h2>;
-// }
-
-// const car = () => {
-//   return <div>This is car component</div>;
-// };
-
-// const car = () => <div>This is car component</div>;
-
-// export default car;
-
-// eslint-disable-next-line import/no-anonymous-default-export
 export default (props) => (
-  <div>
+  <div
+    style={{
+      border: "1px solid #ccc",
+      marginBottom: "10px",
+      display: "block",
+      padding: "10px",
+    }}>
     <h3>Car name: {props.name}</h3>
     <p>
       Year: <strong>{props.year}</strong>
     </p>
-    <button onClick={props.onChangeTitle}>Click</button>
+    <input type="text" onChange={props.onChangeName} value={props.name} />
+    <button onClick={props.onDelete}>Delete</button>
   </div>
 );
