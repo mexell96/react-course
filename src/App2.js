@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Car from "./Car/Car";
 
 export class App2 extends Component {
   render() {
@@ -7,7 +8,9 @@ export class App2 extends Component {
     };
     return (
       <div style={divStyle}>
-        <h1 style={{ color: "blue", fontSize: "20px" }}>Hello, Minsk</h1>
+        <h1>Hello, Minsk</h1>
+
+        <Car />
       </div>
     );
   }
