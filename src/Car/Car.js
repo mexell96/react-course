@@ -13,11 +13,12 @@ import React from "react";
 // export default car;
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default ({ name, year }) => (
+export default (props) => (
   <div>
-    <h3>Car name: {name}</h3>
+    <h3>Car name: {props.name}</h3>
     <p>
-      Year: <strong>{year}</strong>
+      Year: <strong>{props.year}</strong>
     </p>
+    {props.children}
   </div>
 );
